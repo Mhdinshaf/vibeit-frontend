@@ -1,0 +1,49 @@
+<div class="max-w-screen-xl mx-auto px-4 py-10 flex flex-col md:flex-row gap-10">
+  
+  <aside class="w-full md:w-64 flex-shrink-0">
+    <div class="sticky top-24">
+      <h2 class="text-xl font-black italic uppercase mb-6">Filters</h2>
+      
+      <div class="mb-8">
+        <h4 class="font-bold text-sm uppercase mb-4 border-b pb-2">Category</h4>
+        <div class="space-y-3">
+          <label class="flex items-center text-sm text-gray-600 cursor-pointer">
+            <input type="checkbox" class="rounded border-gray-300 text-blue-600 mr-3"> Smartwatches
+          </label>
+          <label class="flex items-center text-sm text-gray-600 cursor-pointer">
+            <input type="checkbox" class="rounded border-gray-300 text-blue-600 mr-3"> Earbuds
+          </label>
+          <label class="flex items-center text-sm text-gray-600 cursor-pointer">
+            <input type="checkbox" class="rounded border-gray-300 text-blue-600 mr-3"> Accessories
+          </label>
+        </div>
+      </div>
+
+      <div class="mb-8">
+        <h4 class="font-bold text-sm uppercase mb-4 border-b pb-2">Price Range</h4>
+        <input type="range" class="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer">
+        <div class="flex justify-between text-xs font-bold text-gray-400 mt-2">
+          <span>Rs 0</span>
+          <span>Rs 100,000+</span>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <main class="flex-grow">
+    <div class="flex justify-between items-center mb-8 bg-gray-50 p-4 rounded-xl">
+      <h1 class="font-black text-2xl italic uppercase">All Products <span class="text-xs text-gray-400 ml-2">(1003 Products)</span></h1>
+      <select class="bg-white border-none text-xs font-bold rounded-lg focus:ring-0">
+        <option>Best Selling</option>
+        <option>Price: Low to High</option>
+        <option>Price: High to Low</option>
+      </select>
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div class="h-96 bg-gray-100 rounded-2xl animate-pulse"></div>
+      <div class="h-96 bg-gray-100 rounded-2xl animate-pulse"></div>
+      <div class="h-96 bg-gray-100 rounded-2xl animate-pulse"></div>
+    </div>
+  </main>
+</div>

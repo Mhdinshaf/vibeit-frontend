@@ -1,0 +1,131 @@
+<section class="max-w-screen-xl mx-auto px-4 py-6">
+  <div class="relative rounded-[2rem] overflow-hidden bg-slate-950 h-[500px] flex items-center group">
+    <div class="absolute inset-0 bg-gradient-to-r from-black/80 via-black/40 to-transparent z-10"></div>
+    
+    <img src="https://images.unsplash.com/photo-1546435770-a3e426ca472b?q=80&w=2070&auto=format&fit=crop" 
+         class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000">
+
+    <div class="relative z-20 pl-10 md:pl-20 max-w-2xl">
+      <span class="inline-block px-4 py-1 bg-blue-600 text-white text-[10px] font-bold tracking-[0.3em] uppercase rounded-full mb-6">
+        New Generation Tech
+      </span>
+      <h1 class="text-5xl md:text-7xl font-black text-white italic uppercase leading-[0.9]">
+        Elevate Your <br> <span class="text-blue-500 underline decoration-4 underline-offset-8">Vibe</span> Today
+      </h1>
+      <p class="mt-8 text-gray-300 font-medium text-sm md:text-base leading-relaxed">
+        Premium Gadgets, Original Accessories & Exclusive Deals. <br> Powered by AI Brothers for a smarter lifestyle.
+      </p>
+      <div class="mt-10 flex gap-4">
+        <button routerLink="/shop" class="bg-blue-600 text-white px-10 py-4 rounded-full font-black uppercase tracking-widest hover:bg-white hover:text-blue-600 transition-all duration-300 shadow-xl shadow-blue-900/20">
+          Shop Now
+        </button>
+        <button class="bg-white/10 backdrop-blur-md text-white border border-white/20 px-10 py-4 rounded-full font-black uppercase tracking-widest hover:bg-white/20 transition-all">
+          Explore
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="max-w-screen-xl mx-auto px-4 py-10">
+  <div class="grid grid-cols-2 md:grid-cols-4 gap-8 bg-white p-10 rounded-[2rem] shadow-sm border border-gray-100">
+    <div class="flex items-center gap-4 border-r border-gray-100 last:border-0">
+      <div class="text-3xl">🚚</div>
+      <div><h4 class="font-black text-xs uppercase tracking-tight">Free Shipping</h4><p class="text-[10px] text-gray-400 font-bold uppercase">Orders over 5k</p></div>
+    </div>
+    <div class="flex items-center gap-4 border-r border-gray-100 last:border-0">
+      <div class="text-3xl">🛡️</div>
+      <div><h4 class="font-black text-xs uppercase tracking-tight">100% Genuine</h4><p class="text-[10px] text-gray-400 font-bold uppercase">Original Brand Warranty</p></div>
+    </div>
+    <div class="flex items-center gap-4 border-r border-gray-100 last:border-0">
+      <div class="text-3xl">💰</div>
+      <div><h4 class="font-black text-xs uppercase tracking-tight">Best Price</h4><p class="text-[10px] text-gray-400 font-bold uppercase">Guaranteed Value</p></div>
+    </div>
+    <div class="flex items-center gap-4 last:border-0">
+      <div class="text-3xl">🎧</div>
+      <div><h4 class="font-black text-xs uppercase tracking-tight">24/7 Support</h4><p class="text-[10px] text-gray-400 font-bold uppercase">AI Brothers Assistance</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="max-w-screen-xl mx-auto px-4 py-12">
+  <div class="text-center mb-10">
+    <h2 class="text-2xl font-black italic uppercase tracking-widest">Featured <span class="text-blue-600">Categories</span></h2>
+    <div class="h-1 w-12 bg-blue-600 mx-auto mt-2"></div>
+  </div>
+  <div class="flex flex-wrap justify-center gap-8 md:gap-14">
+    <div *ngFor="let cat of ['Phones', 'Watches', 'Audio', 'Laptops', 'Power', 'Cases']" 
+         class="group cursor-pointer flex flex-col items-center">
+      <div class="w-24 h-24 md:w-32 md:h-32 rounded-full bg-slate-50 border border-gray-100 flex items-center justify-center group-hover:bg-blue-600 transition-all duration-500 shadow-inner overflow-hidden">
+        <img [src]="'https://img.icons8.com/ios-filled/100/2563eb/iphone.png'" class="w-12 group-hover:invert transition-all">
+      </div>
+      <span class="mt-4 text-xs font-black uppercase tracking-widest text-gray-500 group-hover:text-blue-600 transition-colors">{{cat}}</span>
+    </div>
+  </div>
+</section>
+
+<section class="max-w-screen-xl mx-auto px-4 py-12 bg-gray-50/50 rounded-[3rem] my-10 border border-gray-100/50">
+  <div class="flex justify-between items-end mb-12 px-6">
+    <div>
+      <h2 class="text-4xl font-black text-gray-900 italic uppercase">Best Sellers</h2>
+      <p class="text-xs font-bold text-gray-400 uppercase tracking-widest mt-1">Hottest products of the week</p>
+    </div>
+    <a routerLink="/shop" class="text-xs font-black text-blue-600 border-b-2 border-blue-600 pb-1 hover:text-gray-900 hover:border-gray-900 transition-all uppercase italic">View Shop</a>
+  </div>
+
+  <div class="grid grid-cols-2 lg:grid-cols-4 gap-8">
+    <div class="group relative bg-white rounded-[2rem] p-6 hover:shadow-2xl hover:shadow-blue-500/10 transition-all duration-500 border border-transparent hover:border-blue-100">
+      <span class="absolute top-6 left-6 bg-red-600 text-white text-[10px] font-black px-3 py-1 rounded-full z-10 italic shadow-lg">SAVE 15%</span>
+      
+      <div class="aspect-square rounded-2xl bg-gray-50 mb-6 overflow-hidden flex items-center justify-center p-4">
+        <img src="https://m.media-amazon.com/images/I/61f1YfTkTDL._AC_SL1500_.jpg" 
+             class="w-full h-full object-contain group-hover:scale-110 transition-transform duration-700">
+      </div>
+
+      <div class="text-center">
+        <p class="text-[10px] font-black uppercase tracking-widest text-blue-500 mb-1">Soundcore</p>
+        <h3 class="font-bold text-gray-800 text-sm h-10 line-clamp-2 px-2">Anker Soundcore R50i NC True Wireless Earbuds</h3>
+        <div class="mt-4 flex flex-col items-center">
+          <span class="text-xl font-black text-gray-900">Rs 6,999.00</span>
+          <span class="text-xs text-gray-400 line-through font-bold">Rs 8,500.00</span>
+        </div>
+      </div>
+
+      <button class="w-full mt-6 py-4 bg-gray-900 text-white text-[10px] font-black rounded-2xl hover:bg-blue-600 transition-all shadow-xl active:scale-95 uppercase tracking-[0.2em]">
+        Add to Bag
+      </button>
+    </div>
+    
+    </div>
+</section>
+
+<section class="max-w-screen-xl mx-auto px-4 py-10 grid grid-cols-1 md:grid-cols-2 gap-8">
+  <div class="h-[350px] bg-red-600 rounded-[2.5rem] p-12 flex items-center justify-between overflow-hidden relative group">
+    <div class="relative z-20">
+      <h3 class="text-white font-black text-5xl italic uppercase leading-[0.8]">Clearance <br> Sale!</h3>
+      <p class="text-white/80 mt-6 text-sm font-bold uppercase tracking-widest">Flat 50% Off Everything</p>
+      <button class="mt-8 bg-white text-red-600 px-8 py-3 rounded-full font-black uppercase text-xs hover:scale-105 transition-transform">Grab Deals</button>
+    </div>
+    <img src="https://pngimg.com/uploads/headphone/headphone_PNG101941.png" 
+         class="absolute -right-10 h-72 rotate-12 group-hover:rotate-0 transition-transform duration-700 opacity-40 md:opacity-100">
+  </div>
+
+  <div class="h-[350px] bg-blue-600 rounded-[2.5rem] p-12 flex items-center justify-between overflow-hidden relative group">
+    <div class="relative z-20">
+      <h3 class="text-white font-black text-5xl italic uppercase leading-[0.8]">Reseller <br> Program</h3>
+      <p class="text-white/80 mt-6 text-sm font-bold uppercase tracking-widest">Join with VibeIt & Earn</p>
+      <button class="mt-8 bg-white text-blue-600 px-8 py-3 rounded-full font-black uppercase text-xs hover:scale-105 transition-transform">Join Now</button>
+    </div>
+    <img src="https://static.vecteezy.com/system/resources/previews/010/851/443/original/3d-male-character-sitting-on-a-sofa-and-working-on-a-laptop-free-png.png" 
+         class="absolute -right-10 h-72 group-hover:scale-110 transition-transform duration-700 opacity-40 md:opacity-100">
+  </div>
+</section>
+
+<section class="max-w-screen-xl mx-auto px-4 py-20 text-center border-t border-gray-100 mt-10">
+  <h2 class="text-4xl font-black italic uppercase">Vibe with <span class="text-blue-600">Us</span></h2>
+  <p class="text-gray-400 font-bold uppercase tracking-[0.3em] text-[10px] mt-4">Join our community for early access to deals</p>
+  <div class="mt-8 max-w-md mx-auto flex gap-2">
+    <input type="email" placeholder="ENTER YOUR EMAIL" class="flex-grow bg-gray-100 border-none rounded-full px-8 py-4 text-xs font-bold focus:ring-2 focus:ring-blue-600 outline-none">
+    <button class="bg-gray-900 text-white px-8 py-4 rounded-full font-black text-xs uppercase tracking-widest">Join</button>
+  </div>
+</section>

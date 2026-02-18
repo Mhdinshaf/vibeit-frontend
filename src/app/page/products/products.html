@@ -1,0 +1,108 @@
+<div class="max-w-screen-xl mx-auto px-4 py-12">
+  <nav class="flex text-[10px] font-black uppercase tracking-[0.2em] text-gray-400 mb-8 gap-2">
+    <a routerLink="/" class="hover:text-blue-600 transition">Home</a> <span>/</span>
+    <a routerLink="/shop" class="hover:text-blue-600 transition">Audio</a> <span>/</span>
+    <span class="text-gray-900 italic">Anker Soundcore R50i NC</span>
+  </nav>
+
+  <div class="flex flex-col lg:flex-row gap-16">
+    <div class="w-full lg:w-[55%] flex flex-col md:flex-row gap-4">
+      <div class="hidden md:flex flex-col gap-4 w-24">
+        <div *ngFor="let i of [1,2,3,4]" class="aspect-square bg-gray-50 rounded-2xl border border-gray-100 hover:border-blue-600 transition-all cursor-pointer overflow-hidden p-3 group">
+          <img src="https://m.media-amazon.com/images/I/61f1YfTkTDL._AC_SL1500_.jpg" class="w-full h-full object-contain group-hover:scale-110 transition-transform">
+        </div>
+      </div>
+      
+      <div class="flex-grow aspect-square bg-white rounded-[3rem] border border-gray-100 overflow-hidden relative group p-12 shadow-sm">
+        <span class="absolute top-8 left-8 bg-red-600 text-white text-[10px] font-black px-4 py-1.5 rounded-full z-10 italic shadow-lg">SALE 7% OFF</span>
+        <img src="https://m.media-amazon.com/images/I/61f1YfTkTDL._AC_SL1500_.jpg" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-700">
+        <button class="absolute bottom-8 right-8 bg-white/90 backdrop-blur-md p-4 rounded-full shadow-2xl hover:bg-blue-600 hover:text-white transition-all text-xl">
+          🔍
+        </button>
+      </div>
+    </div>
+
+    <div class="w-full lg:w-[45%]">
+      <div class="border-b border-gray-100 pb-8">
+        <div class="flex items-center gap-2 mb-4">
+          <div class="flex text-yellow-400 text-sm">★★★★★</div>
+          <span class="text-[10px] font-black text-gray-400 uppercase tracking-widest">(12 Customer Reviews)</span>
+        </div>
+        
+        <span class="text-blue-600 font-black uppercase text-[11px] tracking-[0.4em]">Official Anker Store</span>
+        <h1 class="text-4xl md:text-5xl font-black text-gray-900 italic uppercase mt-3 leading-[1.1]">Anker Soundcore <br> R50i NC Earbuds</h1>
+        
+        <div class="flex items-baseline gap-4 mt-8">
+          <span class="text-5xl font-black text-blue-600 tracking-tighter">Rs 6,999</span>
+          <span class="text-lg text-gray-300 line-through font-bold">Rs 7,499</span>
+        </div>
+
+        <div class="mt-6 p-4 bg-gray-50 rounded-2xl border border-gray-100 flex items-center justify-between">
+          <span class="text-[10px] font-black uppercase text-gray-500">Or 3 installments of <span class="text-gray-900">Rs 2,333</span> with</span>
+          <div class="flex gap-2">
+            <span class="font-black text-xs text-green-500 italic">KOKO</span>
+            <span class="font-black text-xs text-purple-500 italic">MINTPAY</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-2 gap-6 py-10 border-b border-gray-100">
+        <div class="flex items-center gap-4">
+          <div class="w-12 h-12 bg-blue-50 rounded-2xl flex items-center justify-center text-2xl shadow-inner">⚡</div>
+          <span class="text-[10px] font-black uppercase text-gray-600 leading-tight tracking-wide">Express <br> Delivery</span>
+        </div>
+        <div class="flex items-center gap-4">
+          <div class="w-12 h-12 bg-slate-900 rounded-2xl flex items-center justify-center text-2xl shadow-inner">🛡️</div>
+          <span class="text-[10px] font-black uppercase text-gray-600 leading-tight tracking-wide">6 Months <br> Warranty</span>
+        </div>
+      </div>
+
+      <div class="py-10 space-y-5">
+        <div class="flex items-center gap-4">
+          <div class="flex items-center bg-gray-100 rounded-full p-1 border border-gray-200">
+            <button class="w-12 h-12 flex items-center justify-center font-black text-gray-500 hover:text-blue-600 transition text-xl">-</button>
+            <input type="text" value="1" class="w-12 bg-transparent text-center border-none text-sm font-black focus:ring-0">
+            <button class="w-12 h-12 flex items-center justify-center font-black text-gray-500 hover:text-blue-600 transition text-xl">+</button>
+          </div>
+          <button class="flex-grow bg-gray-900 text-white py-5 rounded-full font-black uppercase tracking-[0.2em] hover:bg-blue-600 transition-all shadow-2xl shadow-gray-900/20 active:scale-95 text-xs">
+            Add to Bag
+          </button>
+        </div>
+        <button class="w-full bg-blue-600 text-white py-5 rounded-full font-black uppercase tracking-[0.2em] hover:bg-blue-700 transition-all shadow-2xl shadow-blue-600/20 text-xs">
+          Buy It Now
+        </button>
+      </div>
+
+      <div class="flex items-center gap-4 pt-4 border-t border-gray-50">
+        <span class="text-[10px] font-black uppercase text-gray-400 italic">Share This Vibe:</span>
+        <div class="flex gap-3">
+          <div class="w-8 h-8 rounded-full bg-gray-100 hover:bg-blue-600 hover:text-white transition flex items-center justify-center cursor-pointer text-xs">f</div>
+          <div class="w-8 h-8 rounded-full bg-gray-100 hover:bg-blue-400 hover:text-white transition flex items-center justify-center cursor-pointer text-xs">t</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="mt-24">
+    <div class="flex justify-center gap-12 border-b border-gray-100 mb-12">
+      <button class="pb-6 text-xs font-black uppercase italic border-b-2 border-blue-600 text-blue-600 tracking-widest">Description</button>
+      <button class="pb-6 text-xs font-black uppercase italic border-b-2 border-transparent text-gray-400 hover:text-gray-900 transition tracking-widest">Specifications</button>
+      <button class="pb-6 text-xs font-black uppercase italic border-b-2 border-transparent text-gray-400 hover:text-gray-900 transition tracking-widest">Shipping & Returns</button>
+    </div>
+    
+    <div class="max-w-4xl mx-auto prose prose-slate text-gray-500 italic leading-relaxed text-center">
+      <p>The Anker Soundcore R50i NC brings you the next level of audio immersion. With active noise cancellation, you can vibe without any background distractions. Featuring 10mm drivers and a total playtime of 30 hours, these earbuds are built for the long run. Designed by AI Brothers for those who demand quality and style.</p>
+    </div>
+  </div>
+
+  <div class="mt-32">
+    <h2 class="text-3xl font-black italic uppercase text-center mb-12">You Might Also <span class="text-blue-600">Vibe With</span></h2>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+      <div *ngFor="let p of [1,2,3,4]" class="bg-white rounded-[2rem] p-6 border border-gray-50 hover:shadow-xl transition-all">
+        <div class="aspect-square bg-gray-50 rounded-2xl mb-4"></div>
+        <div class="h-4 w-20 bg-gray-100 rounded mb-2"></div>
+        <div class="h-4 w-full bg-gray-100 rounded"></div>
+      </div>
+    </div>
+  </div>
+</div>
