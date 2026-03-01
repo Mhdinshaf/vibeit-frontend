@@ -6,6 +6,8 @@ import { Cart } from './page/cart/cart';
 import { Login } from './page/login/login';
 import { Contact } from './page/contact/contact';
 import { About } from './page/about/about';
+import { combineLatest } from 'rxjs';
+import { Register } from './page/register/register';
 
 export const routes: Routes = [
     {
@@ -27,7 +29,8 @@ export const routes: Routes = [
     },
     {
         path:'login',
-        component:Login
+        component:Login,
+        
     },
     {
         path:'about',
@@ -36,6 +39,11 @@ export const routes: Routes = [
     {
         path:'contact',
         component:Contact
+    }
+    ,
+    {
+        path:'register',
+        component:Register
     }
 
 ];
